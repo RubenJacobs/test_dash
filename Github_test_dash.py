@@ -1,5 +1,6 @@
 from dash import Dash, dcc, html, Input, Output,callback
 app = Dash(__name__)
+server = app.server
 app.layout = html.Div([
     dcc.Dropdown(['blue','green','yellow'], id='color_dropdown'),
     html.Div(id='color_output')
